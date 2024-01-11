@@ -1,9 +1,15 @@
+interface Carro {
+  marca: string;
+  placa: string;
+  entrada: Date;
+}
+
 (function () {
   const $ = (query: string): HTMLInputElement | null =>
     document.querySelector(query);
   function parking() {
     function read() {}
-    function create() {}
+    function create(carro: Carro) {}
     function remove() {}
     function save() {}
     function render() {}
